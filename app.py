@@ -10,7 +10,7 @@ from mb_core import (
 )
 
 # ---------- Page setup ----------
-st.set_page_config(page_title="MoneyBuddy 💸", page_icon="💸", layout="wide")
+st.set_page_config(page_title="WealthyWays 💸", page_icon="💸", layout="wide")
 
 # ---------- Small CSS polish ----------
 st.markdown("""
@@ -38,7 +38,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 with st.sidebar:
-    st.title("💸 MoneyBuddy")
+    st.title("💸 WealthyWays")
     st.caption("Personal Budget Tracker")
     st.write(" ")
     st.markdown("> **Tip:** Positive = income, Negative = expense")
@@ -54,7 +54,7 @@ with st.sidebar:
             df = get_budgets_df()
             st.download_button("Download", df.to_csv(index=False), "budgets.csv", use_container_width=True)
     st.divider()
-    st.caption("Built with ❤️ for your wallet.")
+    st.caption("Built by Anirudha Pujari.")
 
 # ---------- Tabs ----------
 tab_dash, tab_add, tab_budgets, tab_goals, tab_tx = st.tabs(
