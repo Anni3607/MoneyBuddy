@@ -41,7 +41,7 @@ with st.sidebar:
     st.title("💸 WealthyWays")
     st.caption("Personal Budget Tracker")
     st.write(" ")
-    st.markdown("> **Tip:** Positive = income, Negative = expense")
+    st.markdown("> Budgeting has only one rule: **Do not go over budget**")
     st.divider()
     st.write("📁 Download backups")
     colA, colB = st.columns(2)
